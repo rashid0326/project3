@@ -100,34 +100,6 @@ section.hidden {
   display: none;
 }
 
-/* Add styles for game tabs and content */
-.game-tabs {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.game-tabs .tab {
-  cursor: pointer;
-  padding: 10px 20px;
-  margin: 0 10px;
-  background-color: #333;
-  color: #FFF;
-  border-radius: 5px;
-}
-
-.game-tabs .tab:hover {
-  background-color: #0077B6;
-}
-
-.game-content {
-  margin-top: 20px;
-}
-
-.game {
-  display: none;
-}
-
 /* Add styles for the 'active' class in navigation */
 nav a.active {
   font-weight: bold;
@@ -164,23 +136,24 @@ nav a.active {
     display: block;
   }
   
-/* Add styles for the Quick Access section */
-#quick-access {
-  text-align: center;
-  margin-top: 20px;
-}
+  /* Add styles for the Quick Access section */
+  #quick-access {
+    text-align: center;
+    margin-top: 20px;
+  }
 
-#quick-links img {
-  display: block;
-  border-radius: 8px; /* Add a border-radius for a rounded look */
-  cursor: pointer; /* Add a pointer cursor to indicate the link */
-}
+  #quick-links img {
+    display: block;
+    border-radius: 8px; /* Add a border-radius for a rounded look */
+    cursor: pointer; /* Add a pointer cursor to indicate the link */
+  }
 
-/* Adjust positions of Google and YouTube logos */
-#quick-links .google {
-  margin-right: auto; /* Push Google to the left */
-}
+  /* Adjust positions of Google and YouTube logos */
+  #quick-links .google {
+    margin-right: auto; /* Push Google to the left */
+  }
 
-#quick-links .youtube {
-  margin-left: auto; /* Push YouTube to the right */
+  #quick-links .youtube {
+    margin-left: auto; /* Push YouTube to the right */
+  }
 }
