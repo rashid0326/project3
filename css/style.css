@@ -163,9 +163,37 @@ section {
     text-align: center;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+section {
+    text-align: center;
+}
+
+#main {
+    text-align: center;
+}
+
 #map {
-    height: 300px; /* Adjust the height as needed */
     width: 80%; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
     margin: 20px auto; /* Center the map horizontally with some margin */
 }
 
@@ -178,7 +206,3 @@ footer {
     text-align: center;
 }
 
-
-#quick-links .youtube {
-  margin-left: 10px; /* Add margin to the left of YouTube logo */
-}
