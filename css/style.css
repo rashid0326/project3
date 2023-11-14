@@ -48,19 +48,19 @@ nav li a {
   font-size: 20px; /* Increase the font size for the navigation links */
 }
 
-/* Container to make content full-width */
+
 .container {
   max-width: 100%;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Page content styles with a new background color */
+
 .content {
-  background: #E9E7FA; /* Updated page content background color */
+  background: #E9E7FA; 
 }
 
-/* Clean and Simple Footer Styles */
+
 footer {
   background: #333; /* Footer background color */
   padding: 20px;
@@ -68,7 +68,6 @@ footer {
   text-align: center; /* Center the text in the footer */
 }
 
-/* Create a futuristic border at the bottom of the page */
 .page-border {
   content: "";
   height: 2px; /* Border thickness */
@@ -81,7 +80,7 @@ a:hover {
   color: #00537E; /* Hover color for links */
 }
 
-/* Futuristic Button Styles */
+
 .button {
   background: #0077B6; /* Button background color */
   color: #FFF; /* Button text color */
@@ -162,7 +161,7 @@ section {
 }
 
 #main {
-    text-align: center;
+    text-align: left;
     margin: 20px auto; /* Adjust the margin to center the #main div vertically */
 }
 
