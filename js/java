@@ -1,1 +1,38 @@
+<script>
+    function initMap() {
+            // Create a map centered on a specific location (e.g., Chicago Millennium Park)
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: 41.8821, lng: -87.6247 },  // Chicago Millennium Park coordinates
+                zoom: 15
+            });
 
+            // Add a polygon (shape) to the map (for example, a square around Millennium Park)
+            var squareCoords = [
+                { lat: 41.8829, lng: -87.6236 },
+                { lat: 41.8810, lng: -87.6236 },
+                { lat: 41.8810, lng: -87.6258 },
+                { lat: 41.8829, lng: -87.6258 },
+                { lat: 41.8829, lng: -87.6236 }
+            ];
+
+            var square = new google.maps.Polygon({
+                paths: squareCoords,
+                strokeColor: '#FF0000',
+                strokeOpacity: 0.8,
+                strokeWeight: 2,
+                fillColor: '#FF0000',
+                fillOpacity: 0.35
+            });
+            square.setMap(map);
+
+            // Add a marker to the map (for example, Millennium Park marker)
+            var marker = new google.maps.Marker({
+                position: { lat: 41.8821, lng: -87.6247 },
+                map: map,
+                title: 'Millennium Park, Chicago'
+            });
+        }
+    </script>
+
+</body>
+</html>
