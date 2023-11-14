@@ -12,7 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
   var youtubeLogoImg = document.createElement("img");
   youtubeLogoImg.src = "Img/images/youtube.jpg"; // Replace with the actual path to your YouTube logo image
   youtubeLogoImg.alt = "YouTube Logo";
-  youtubeLogo.appendChild(youtubeLogoImg);
+
+  // Wrap the YouTube logo within the anchor tag
+  youtubeAnchor.appendChild(youtubeLogoImg);
+  youtubeLink.appendChild(youtubeAnchor);
 
   // Create Google link and logo
   var googleLink = document.createElement("li");
@@ -25,11 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
   var googleLogoImg = document.createElement("img");
   googleLogoImg.src = "Img/images/google.jpg"; // Replace with the actual path to your Google logo image
   googleLogoImg.alt = "Google Logo";
-  googleLogo.appendChild(googleLogoImg);
+
+  // Wrap the Google logo within the anchor tag
+  googleAnchor.appendChild(googleLogoImg);
+  googleLink.appendChild(googleAnchor);
 
   // Append links and logos to the Quick Access section
   quickLinksContainer.appendChild(youtubeLink);
-  quickLinksContainer.appendChild(youtubeLogo);
   quickLinksContainer.appendChild(googleLink);
-  quickLinksContainer.appendChild(googleLogo);
 });
