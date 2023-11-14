@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var youtubeLink = document.createElement("li");
   var youtubeAnchor = document.createElement("a");
   youtubeAnchor.href = "https://www.youtube.com";
-  youtubeAnchor.target = "YOUTUBE ACCESS"; // Open link in a new tab/window
+  youtubeAnchor.target = "_blank"; // Open link in a new tab/window
+  youtubeAnchor.title = "Access YouTube"; // Add a title for additional information
   youtubeLink.appendChild(youtubeAnchor);
 
   var youtubeLogo = document.createElement("li");
@@ -21,7 +22,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var googleLink = document.createElement("li");
   var googleAnchor = document.createElement("a");
   googleAnchor.href = "https://www.google.com";
-  googleAnchor.target = "GOOGLE ACCESS"; // Open link in a new tab/window
+  googleAnchor.target = "_blank"; // Open link in a new tab/window
+  googleAnchor.title = "Access Google"; // Add a title for additional information
   googleLink.appendChild(googleAnchor);
 
   var googleLogo = document.createElement("li");
