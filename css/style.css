@@ -134,7 +134,9 @@ nav a.active {
     margin: 10px 0;
     display: block;
   }
-  
+}
+
+/* Additional styles for the map */
 body {
     margin: 0;
     padding: 0;
@@ -159,45 +161,17 @@ section {
     text-align: center;
 }
 
-#main {
-    text-align: center;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav li {
-    display: inline-block;
-    margin-right: 15px;
-}
-
-section {
-    text-align: center;
-}
 #main {
     text-align: center;
     margin: 20px auto; /* Adjust the margin to center the #main div vertically */
 }
 
 #map {
-    width: 50%; /* Adjust the width as needed */
-    height: 35px; /* Adjust the height as needed */
+    width: 70%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
     margin: 20px auto; /* Adjust the margin to center the map horizontally with some margin */
     display: block; /* Ensure the map is treated as a block-level element */
 }
-
 
 #button {
     display: block;
@@ -215,8 +189,6 @@ section {
     background-color: #2980b9;
 }
 
-
 footer {
     text-align: center;
 }
-
