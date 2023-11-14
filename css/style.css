@@ -1,0 +1,96 @@
+/* Reset some default styles */
+html, body, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #333; /* Text color */
+}
+
+a {
+  text-decoration: none;
+  color: #0077B6; /* Link color */
+}
+
+/* Clean and Simple Header Styles */
+header {
+  background: #333; /* Header background color */
+  padding: 20px;
+}
+
+.header-title {
+  font-size: 24px;
+  color: #FFF; /* Header title color */
+}
+
+/* Clean and Simple Navigation Bar Styles */
+nav {
+  background: #c05f5f; /* Navigation bar background color */
+  text-align: center; /* Center the navigation bar */
+  padding: 30px; /* Increase padding for a bigger size */
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px; /* Adjust the spacing as needed */
+}
+
+nav li a {
+  color: #FFF; /* Navigation bar link color */
+  font-size: 20px; /* Increase the font size for the navigation links */
+}
+
+/* Container to make content full-width */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Page content styles with a new background color */
+.content {
+  background: #E9E7FA; /* Updated page content background color */
+}
+
+/* Clean and Simple Footer Styles */
+footer {
+  background: #333; /* Footer background color */
+  padding: 20px;
+  color: #FFF; /* Footer text color */
+  text-align: center; /* Center the text in the footer */
+}
+
+/* Create a futuristic border at the bottom of the page */
+.page-border {
+  content: "";
+  height: 2px; /* Border thickness */
+  background-color: #0077B6; /* Border color */
+  display: block;
+}
+
+/* Add hover styles for links */
+a:hover {
+  color: #00537E; /* Hover color for links */
+}
+
+/* Futuristic Button Styles */
+.button {
+  background: #0077B6; /* Button background color */
+  color: #FFF; /* Button text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #00537E; /* Hover color for the button */
+}
