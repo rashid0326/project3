@@ -189,8 +189,10 @@ nav a.active {
 }
 
 /* Adjust positions of Google and YouTube logos */
-#quick-links .google,
-#quick-links .youtube {
-  margin: 0; /* Remove margins to have logos next to each other */
+#quick-links .google {
+  margin-right: auto; /* Push Google to the left */
 }
 
+#quick-links .youtube {
+  margin-left: auto; /* Push YouTube to the right */
+}
