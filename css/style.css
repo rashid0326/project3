@@ -186,16 +186,18 @@ nav li {
 section {
     text-align: center;
 }
-
 #main {
     text-align: center;
+    margin: 20px auto; /* Adjust the margin to center the #main div vertically */
 }
 
 #map {
     width: 80%; /* Adjust the width as needed */
     height: 300px; /* Adjust the height as needed */
-    margin: 20px auto; /* Center the map horizontally with some margin */
+    margin: 20px auto; /* Adjust the margin to center the map horizontally with some margin */
+    display: block; /* Ensure the map is treated as a block-level element */
 }
+
 
 #button {
     display: block;
