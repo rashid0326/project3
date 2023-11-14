@@ -123,7 +123,6 @@ nav a.active {
   }
 }
 
-/* Add responsive styles if needed */
 @media screen and (max-width: 768px) {
   nav ul {
     display: flex;
@@ -136,24 +135,30 @@ nav a.active {
     display: block;
   }
   
-  /* Add styles for the Quick Access section */
-  #quick-access {
-    text-align: center;
-    margin-top: 20px;
-  }
+/* Add styles for the Quick Access section */
+#quick-access {
+  text-align: center;
+  margin-top: 20px;
+}
 
-  #quick-links img {
-    display: block;
-    border-radius: 8px; /* Add a border-radius for a rounded look */
-    cursor: pointer; /* Add a pointer cursor to indicate the link */
-  }
+#quick-links {
+  display: flex;
+  justify-content: center; /* Center the child elements horizontally */
+  align-items: center; /* Center the child elements vertically */
+}
 
-  /* Adjust positions of Google and YouTube logos */
-  #quick-links .google {
-    margin-right: auto; /* Push Google to the left */
-  }
+#quick-links img {
+  display: block;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px; /* Add margin between images for spacing */
+}
 
-  #quick-links .youtube {
-    margin-left: auto; /* Push YouTube to the right */
-  }
+/* Adjust positions of Google and YouTube logos */
+#quick-links .google {
+  margin-right: 10px; /* Add margin to the right of Google logo */
+}
+
+#quick-links .youtube {
+  margin-left: 10px; /* Add margin to the left of YouTube logo */
 }
