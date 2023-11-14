@@ -163,14 +163,27 @@ nav a.active {
     margin: 10px 0;
     display: block;
   }
-}
-/* Add styles for centering the image */
+  
+/* Add styles for centering the image and removing list styling */
 #quick-access {
   text-align: center;
 }
+
 #quick-links {
   list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
 }
+
+#quick-links li {
+  display: inline-block; /* Display list items as inline-block elements */
+  margin-right: 10px; /* Add spacing between the logos (adjust as needed) */
+}
+
+#quick-links img {
+  display: block;
+  margin: 0 auto;
+}
+
 
 #quick-links img {
   display: block;
