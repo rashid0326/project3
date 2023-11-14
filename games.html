@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Project 2: Games</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* Add any additional styles here if needed */
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="main.html">Main</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="games.html">Games</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="games-section" class="hidden">
+    <!-- Game Tabs -->
+    <div class="game-tabs">
+      <div class="tab" id="ticTacToeTab">Tic Tac Toe</div>
+      <div class="tab" id="snakeGameTab">Snake Game</div>
+      <div class="tab" id="memoryGameTab">Memory Game</div>
+    </div>
+
+    <!-- Game Content -->
+    <div class="game-content">
+      <!-- Tic Tac Toe -->
+      <div class="game" id="ticTacToe">
+        <!-- Include Tic Tac Toe JavaScript here -->
+        <script src="javascript/TicTacToe.js"></script>
+      </div>
+
+      <!-- Snake Game -->
+      <div class="game" id="snakeGame">
+        <!-- Include Snake Game JavaScript here -->
+        <script src="javascript/SnakeGame.js"></script>
+      </div>
+
+      <!-- Memory Game -->
+      <div class="game" id="memoryGame">
+        <!-- Include Memory Game JavaScript here -->
+        <script src="javascript/MemoryGame.js"></script>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p class="audioWave">Created by Rashid Ahmed</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('nav a');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetSectionId = link.getAttribute('href').substring(1) + '-section';
+
+          sections.forEach(section => {
+            section.classList.add('hidden');
+          });
+
+          document.getElementById(targetSectionId).classList.remove('hidden');
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
