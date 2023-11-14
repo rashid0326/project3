@@ -192,8 +192,8 @@ section {
 }
 
 #map {
-    width: 80%; /* Adjust the width as needed */
-    height: 300px; /* Adjust the height as needed */
+    width: 50%; /* Adjust the width as needed */
+    height: 35px; /* Adjust the height as needed */
     margin: 20px auto; /* Adjust the margin to center the map horizontally with some margin */
     display: block; /* Ensure the map is treated as a block-level element */
 }
