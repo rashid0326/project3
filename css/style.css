@@ -168,6 +168,9 @@ nav a.active {
 #quick-access {
   text-align: center;
 }
+#quick-links {
+  list-style: none; /* Remove default list styling */
+}
 
 #quick-links img {
   display: block;
