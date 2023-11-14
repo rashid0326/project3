@@ -185,6 +185,7 @@ nav a.active {
   display: block;
   border-radius: 8px; /* Add a border-radius for a rounded look */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  cursor: pointer; /* Add a pointer cursor to indicate the link */
 }
 
 /* Adjust positions of Google and YouTube logos */
