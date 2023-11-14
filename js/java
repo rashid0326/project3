@@ -1,40 +1,49 @@
- function initMap() {
-            const myLatLng = { lat: 41.83155375445465, lng: -87.62724193181992 };
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: myLatLng,
-            });
+// Google Maps API callback function
+function initMap() {
+    // Coordinates for the initial map center
+    const myLatLng = { lat: 41.83155375445465, lng: -87.62724193181992 };
 
-            const contentString =
-                '<div id="content">' +
-                '<div id="siteNotice">' +
-                "</div>" +
-                '<h1 id="first heading" class="first heading">Downtown</h1>' +
-                '<div id="body content">' +
-                "<p><b>Tourist Attraction</b>, also referred to as <b>Chicago</b>" +
-                "</div>" + "</div>";
+    // Create a new Google Map
+    const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: myLatLng,
+    });
 
-            const infowindow = new google.maps.InfoWindow({
-                content: contentString,
-                ariaLabel: "IIT",
-            });
+    // HTML content for the InfoWindow
+    const contentString =
+        '<div id="content">' +
+        '<div id="siteNotice">' +
+        "</div>" +
+        '<h1 id="first heading" class="first heading">Downtown</h1>' +
+        '<div id="body content">' +
+        "<p><b>Tourist Attraction</b>, also referred to as <b>Chicago</b>" +
+        "</div>" + "</div>";
 
-            const marker = new google.maps.Marker({
-                position: myLatLng,
-                map: map,
-                title: "IIT",
-            });
+    // Create an InfoWindow with the specified content
+    const infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        ariaLabel: "IIT",
+    });
 
-            marker.addListener("click", () => {
-                infowindow.open({
-                    anchor: marker,
-                    map: map,
-                });
-            });
+    // Create a marker and set its properties
+    const marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: "IIT",
+    });
 
-            const trafficLayer = new google.maps.TrafficLayer();
-            trafficLayer.setMap(map);
-        }
+    // Add a click event listener to the marker to open the InfoWindow
+    marker.addListener("click", () => {
+        infowindow.open({
+            anchor: marker,
+            map: map,
+        });
+    });
 
-        // Make the initMap function available globally
-        window.initMap = initMap;
+    // Add a Traffic Layer to the map
+    const trafficLayer = new google.maps.TrafficLayer();
+    trafficLayer.setMap(map);
+}
+
+// Make the initMap function available globally
+window.initMap = initMap;
