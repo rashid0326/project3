@@ -164,7 +164,7 @@ nav a.active {
     display: block;
   }
   
-/* Styling for the Quick Access section */
+/* Add styles for the Quick Access section */
 #quick-access {
   text-align: center;
   margin-top: 20px;
@@ -189,10 +189,8 @@ nav a.active {
 }
 
 /* Adjust positions of Google and YouTube logos */
-#quick-links .google {
-  margin-right: auto;
+#quick-links .google,
+#quick-links .youtube {
+  margin: 0; /* Remove margins to have logos next to each other */
 }
 
-#quick-links .youtube {
-  margin-left: auto;
-}
