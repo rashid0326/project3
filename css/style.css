@@ -164,28 +164,25 @@ nav a.active {
     display: block;
   }
   
-/* Add styles for centering the image and removing list styling */
+/* Styling for the Quick Access section */
 #quick-access {
   text-align: center;
+  margin-top: 20px;
 }
 
 #quick-links {
   list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove default padding */
+  padding: 0;
 }
 
 #quick-links li {
   display: inline-block; /* Display list items as inline-block elements */
-  margin-right: 10px; /* Add spacing between the logos (adjust as needed) */
+  margin-right: 20px;
 }
 
 #quick-links img {
   display: block;
   margin: 0 auto;
-}
-
-
-#quick-links img {
-  display: block;
-  margin: 0 auto;
+  border-radius: 8px; /* Add a border-radius for a rounded look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
